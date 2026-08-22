@@ -2,8 +2,6 @@
 
 A desktop currency converter built with Java Swing. It converts between 30+ world currencies using exchange rates fetched from the Gemini API, with an offline fallback so the app still works without an internet connection or API key.
 
-![Java](https://img.shields.io/badge/Java-8%2B-orange)
-![Swing](https://img.shields.io/badge/GUI-Swing-blue)
 
 ## Features
 
