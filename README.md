@@ -1,9 +1,11 @@
-# Currency Converter
+# 💱 Currency Converter
 
 A desktop currency converter built with Java Swing. It converts between 30+ world currencies using exchange rates fetched from the Gemini API, with an offline fallback so the app still works without an internet connection or API key.
 
+![Java](https://img.shields.io/badge/Java-8%2B-orange)
+![Swing](https://img.shields.io/badge/GUI-Swing-blue)
 
-## Features
+## ✨ Features
 
 - Clean, gradient-styled Swing interface
 - Convert between 30+ currencies (USD, EUR, GBP, JPY, INR, and more)
@@ -13,7 +15,7 @@ A desktop currency converter built with Java Swing. It converts between 30+ worl
 - Refresh button to re-fetch the latest rates
 - Displays the current exchange rate alongside the converted result
 
-## How It Works
+## ⚙️ How It Works
 
 The app has three main files:
 
@@ -25,7 +27,7 @@ The app has three main files:
 
 On startup, the app tries to fetch live rates from the Gemini API. If no API key is set, or the request fails for any reason (no internet, invalid key, rate limit, etc.), it automatically falls back to a built-in offline rate table so the converter still works.
 
-## Prerequisites
+## 📋 Prerequisites
 
 - **Java Development Kit (JDK) 8 or higher** installed and added to your system `PATH`
 - (Optional) A free **Gemini API key** from [Google AI Studio](https://aistudio.google.com/) if you want live exchange rates instead of the offline fallback
@@ -37,7 +39,7 @@ java -version
 javac -version
 ```
 
-## Setup
+## 🚀 Setup
 
 1. **Clone or download this repository**
 
@@ -58,7 +60,7 @@ javac -version
 
    > If you skip this step, the app will still run — it will simply use the built-in offline exchange rates instead of live ones.
 
-## Running the App
+## ▶️ Running the App
 
 Compile all the Java files:
 
@@ -74,7 +76,7 @@ java Main
 
 The GUI window should open automatically.
 
-## Usage
+## 🖱️ Usage
 
 1. Enter an amount in the **Amount** field.
 2. Select the currency you're converting **from** and **to** using the dropdown menus.
@@ -82,10 +84,15 @@ The GUI window should open automatically.
 4. Use the **Swap** button to quickly reverse the two currencies.
 5. Use the **Refresh** button to fetch updated exchange rates at any time.
 
-## Supported Currencies
+## 🌍 Supported Currencies
 
 USD, EUR, GBP, JPY, CAD, AUD, CHF, CNY, INR, BRL, KRW, MXN, SGD, NZD, SEK, NOK, DKK, PLN, THB, VND, MYR, IDR, PHP, RUB, ZAR, AED, SAR, TRY, EGP, PKR, BDT, LKR, NPR
 
-## License
+## 📝 Notes
+
+- ⚠️ If you commit your API key to a public repository, anyone can see and use it. It's recommended to keep your key out of version control (for example, by loading it from an environment variable) if you plan to publish this project publicly.
+- The offline fallback rates are static and were accurate as of 2024. For up-to-date rates, use a valid Gemini API key.
+
+## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
